@@ -1,5 +1,9 @@
 #pragma once
 
 class BaseUI {
-    virtual ~BaseUI()=0;
+protected:
+    bool selected;
+public:
+    int x, y;
+    virtual void display()=0;
 };
